@@ -12,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/051095bf24.js" crossorigin="anonymous"></script>
     <!-- Styles -->
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
@@ -25,21 +27,79 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-color': '#da373d',
+                        'secondary-color': '#da373d',
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-manrope">
-    <header>
 
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="hero mt-16">
+            <div class="hero-content  flex-col-reverse lg:flex-row-reverse">
+                <div>
+                    <img src="./images/banner.png" class="max-w-sm" />
+                    <div class="mr-6 -mt-14 flex items-center gap-3 px-7 py-5 w-64 rounded-lg drop-shadow-lg bg-white">
+                        <i class="fa-solid fa-star text-4xl text-[#FFC850]"></i>
+                        <div>
+                            <h3 class="text-3xl font-extrabold">5.00</h3>
+                            <p class="text-base font-semibold">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="space-y-4">
+                    <h1 class="text-7xl font-extrabold">It's good
+                        <br>
+                        tea time at The
+                        <br>
+                        Tea House
+                    </h1>
+                    <p class="py-6 text-base font-medium">Tea and Botanical Solutions Supplier Give
+                        <br>
+                        Optimum Satisfaction
+                        To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- Featured Section -->
+        <section class="text-center my-32">
+            <div class="text-center">
+                <h2 class="text-5xl font-extrabold">
+                    Our Featured Products
+                </h2>
+                <p class="text-base font-medium mt-5 mb-10 lg:max-w-4xl mx-auto">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- First card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </section>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
